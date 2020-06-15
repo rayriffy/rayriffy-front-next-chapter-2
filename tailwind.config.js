@@ -24,6 +24,7 @@ module.exports = {
   ],
   purge: [
     './src/**/*.html',
+    './src/**/*.vue',
     './src/**/*.tsx',
     './src/**/*.ts',
     './src/**/*.jsx',

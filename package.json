@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@vue/component-compiler-utils": "^3.1.2",
     "cssnano": "^4.1.10",
     "cssnano-preset-advanced": "^4.0.7",
     "parcel-bundler": "^1.12.4",
@@ -21,7 +22,8 @@
     "tailwindcss": "^1.4.6",
     "tailwindcss-aspect-ratio": "^3.0.0",
     "tailwindcss-responsive-embed": "^1.0.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "vue-template-compiler": "^2.6.11"
   },
   "pwaManifest": {
     "name": "rayriffy.com",
@@ -47,5 +49,10 @@
     "disablePlugin": false,
     "inDev": false,
     "strategy": "default"
+  },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-fragment": "^1.5.1",
+    "vue-hot-reload-api": "^2.3.4"
   }
 }
