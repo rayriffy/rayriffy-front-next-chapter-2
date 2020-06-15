@@ -11,26 +11,26 @@
   <link rel="apple-touch-icon" href="./assets/favicon.ico">
 </head>
 <body>
-  <main class="container mx-auto">
+  <main class="container mx-auto px-4 dark:text-white">
     <div class="text-4xl font-bold pt-24">Phumrapee Limpianchop</div>
     <div class="mt-4 bg-white rounded-lg overflow-hidden hidden" id="encore-1"></div>
     <div class="pt-4 flex flex-wrap">
-      <div class="w-1/2 py-4 pr-4">
-        <section class="bg-white rounded-lg p-6">
+      <div class="w-full md:w-1/2 py-4 md:pr-4">
+        <section class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <div class="text-2xl font-semibold pb-2 uppercase">Links</div>
           <div id="link-content">
             Loading...
           </div>
         </section>
-        <section class="mt-8 bg-white rounded-lg p-6">
+        <section class="mt-8 bg-white dark:bg-gray-800 rounded-lg p-6">
           <div class="text-2xl font-semibold pb-2 uppercase">Socials</div>
           <div id="social-content">
             Loading...
           </div>
         </section>
       </div>
-      <div class="w-1/2 py-4 pl-4">
-        <section class="bg-white rounded-lg p-6">
+      <div class="w-full md:w-1/2 py-4 md:pl-4">
+        <section class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <div class="text-2xl font-semibold pb-2 uppercase">Blogs</div>
           <div id="blog-content">
             Loading...
@@ -39,7 +39,7 @@
       </div>
     </div>
   </main>
-  <footer class="container mx-auto py-24 flex text-gray-700">
+  <footer class="container mx-auto py-24 flex text-gray-700 px-4 dark:text-white">
     <div class="font-semibold">© 2020 Phumrapee Limpianchop</div>
     <div class="mx-auto"></div>
     <div class="px-2">
@@ -48,5 +48,13 @@
   </footer>
   <script src="./scripts/main.ts" async></script>
   <script src="./scripts/encore.ts" async></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        const path = '/sw.js'
+        navigator.serviceWorker.register(path)
+      })
+    }
+  </script>
 </body>
 </html>

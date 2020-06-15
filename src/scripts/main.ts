@@ -5,9 +5,9 @@ const cardBuilder = (title: string, subtitle: string, url?: string, noExternal?:
   return `
     <div class="py-2">
       ${url ? `<a href="${url}"${noExternal ? '' : 'target="_blank" rel="noopener"'}>` : ''}
-        <div class="bg-gray-100 p-4 rounded-md group">
+        <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-md group">
           <div class="text-xl font-semibold group-hover:underline">${title}</div>
-          <div class="text-gray-700">${subtitle}</div>
+          <div class="text-gray-700 dark:text-gray-300">${subtitle}</div>
         </div>
         ${url ? '</a>' : ''}
     </div>

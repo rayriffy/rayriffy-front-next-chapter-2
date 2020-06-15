@@ -16,6 +16,7 @@
     "cssnano-preset-advanced": "^4.0.7",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-pwa-manifest": "^3.0.7",
+    "parcel-plugin-sw-cache": "^0.3.1",
     "postcss-modules": "^2.0.0",
     "tailwindcss": "^1.4.6",
     "tailwindcss-aspect-ratio": "^3.0.0",
@@ -29,10 +30,22 @@
     "theme": "#1a202c",
     "generateIconOptions": {
       "baseIcon": "./src/assets/favicon.png",
-      "sizes": [192, 384, 512],
+      "sizes": [
+        192,
+        384,
+        512
+      ],
       "display": "standalone",
-      "purpose": ["any", "maskable"],
+      "purpose": [
+        "any",
+        "maskable"
+      ],
       "genFavicons": true
     }
+  },
+  "cache": {
+    "disablePlugin": false,
+    "inDev": false,
+    "strategy": "default"
   }
 }
