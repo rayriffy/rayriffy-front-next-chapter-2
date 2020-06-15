@@ -8,6 +8,7 @@
 
 <script lang="ts">
   import Vue from 'vue'
+
   import card from './card/index.vue'
 
   import { IAPIResult } from "../@types/IAPIResult"

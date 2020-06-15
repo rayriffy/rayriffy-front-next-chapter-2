@@ -23,11 +23,11 @@ module.exports = {
     require("tailwindcss-aspect-ratio"),
   ],
   purge: [
-    './src/**/*.html',
-    './src/**/*.vue',
-    './src/**/*.tsx',
-    './src/**/*.ts',
-    './src/**/*.jsx',
-    './src/**/*.js',
+    './**/*.html',
+    './**/*.vue',
+    './**/*.tsx',
+    './**/*.ts',
+    './**/*.jsx',
+    './**/*.js',
   ]
 }
