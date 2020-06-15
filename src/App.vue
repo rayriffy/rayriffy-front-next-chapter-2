@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <div id="app">
     <div class="mt-4 bg-white dark:bg-gray-800 rounded-lg overflow-hidden hidden" id="encore-1"></div>
     <div class="pt-4 flex flex-wrap">
       <div class="w-full md:w-1/2 py-4 md:pr-4">
@@ -19,16 +19,14 @@
         </section>
       </div>
     </div>
-  </fragment>
+  </div>
 </template>
 
 <script lang="ts">
   import Vue from 'vue'
 
-  import blog from './blog.vue'
-  import card from './card/index.vue'
-
-  import '../assets/tailwind.pcss'
+  import blog from './components/blog.vue'
+  import card from './components/card/index.vue'
 
   export default Vue.extend({
     data: () => ({

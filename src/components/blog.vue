@@ -8,12 +8,20 @@
 
 <script lang="ts">
   import Vue from 'vue'
+  import { Fragment } from 'vue-fragment'
+
   import card from './card/index.vue'
 
   import { IAPIResult } from "../@types/IAPIResult"
   import { IBlog } from "../@types/IBlog"
 
-  let data = {
+  interface IData {
+    blogs: IBlog[]
+    error: boolean
+    loading: boolean
+  }
+
+  let data: IData = {
     blogs: [],
     error: false,
     loading: true,
@@ -39,6 +47,7 @@
     data: () => data,
     components: {
       card,
+      Fragment,
     },
   })
 </script>

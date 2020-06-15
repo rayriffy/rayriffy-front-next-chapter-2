@@ -22,12 +22,12 @@ module.exports = {
     require("tailwindcss-responsive-embed"),
     require("tailwindcss-aspect-ratio"),
   ],
-  purge: [
-    './src/**/*.html',
-    './src/**/*.vue',
-    './src/**/*.tsx',
-    './src/**/*.ts',
-    './src/**/*.jsx',
-    './src/**/*.js',
-  ]
+  // purge: [
+  //   './src/**/*.html',
+  //   './src/**/*.vue',
+  //   './src/**/*.tsx',
+  //   './src/**/*.ts',
+  //   './src/**/*.jsx',
+  //   './src/**/*.js',
+  // ]
 }

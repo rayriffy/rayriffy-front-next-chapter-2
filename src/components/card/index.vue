@@ -13,6 +13,8 @@
 
 <script lang="ts">
   import Vue from 'vue'
+  import { Fragment } from 'vue-fragment'
+
   import cardContent from './content.vue'
 
   export default Vue.extend({
@@ -35,6 +37,7 @@
     },
     components: {
       cardContent,
+      Fragment,
     },
   })
 </script>
