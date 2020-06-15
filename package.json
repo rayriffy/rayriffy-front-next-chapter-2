@@ -15,10 +15,24 @@
     "cssnano": "^4.1.10",
     "cssnano-preset-advanced": "^4.0.7",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-pwa-manifest": "^3.0.7",
     "postcss-modules": "^2.0.0",
     "tailwindcss": "^1.4.6",
     "tailwindcss-aspect-ratio": "^3.0.0",
     "tailwindcss-responsive-embed": "^1.0.0",
     "typescript": "^3.9.5"
+  },
+  "pwaManifest": {
+    "name": "rayriffy.com",
+    "shortName": "rayriffy.com",
+    "startURL": "./",
+    "theme": "#1a202c",
+    "generateIconOptions": {
+      "baseIcon": "./src/assets/favicon.png",
+      "sizes": [192, 384, 512],
+      "display": "standalone",
+      "purpose": ["any", "maskable"],
+      "genFavicons": true
+    }
   }
 }
