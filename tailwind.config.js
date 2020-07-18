@@ -7,6 +7,10 @@ module.exports = {
       "4/3": [4, 3],
       "21/9": [21, 9]
     },
+    // backgroundColor: theme => ({
+    //   ...theme('colors'),
+    //   primary: '#4b6fff',
+    // }),
     extend: {
       screens: {
         'dark': {'raw': '(prefers-color-scheme: dark)'},

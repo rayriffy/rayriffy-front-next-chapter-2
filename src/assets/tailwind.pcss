@@ -3,11 +3,25 @@
 @tailwind utilities;
 
 html {
-  @apply h-full;
+  height: -webkit-fill-available;
 }
 
 body {
-  @apply min-h-full bg-gray-100;
+  @apply h-screen bg-white;
+  height: -webkit-fill-available;
+}
+
+.fill-all {
+  @apply h-screen;
+  height: -webkit-fill-available;
+}
+
+.bg-brand {
+  background-color: #4b6fff;
+}
+
+.hover\:bg-brand-600:hover {
+  background-color: hsl(228, 100%, 56.6%);
 }
 
 @media (prefers-color-scheme: dark) {
