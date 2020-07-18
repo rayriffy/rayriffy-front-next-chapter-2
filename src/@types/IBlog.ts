@@ -3,4 +3,5 @@ export interface IBlog {
   title: string
   subtitle: string
   banner: string
+  category: string[]
 }
