@@ -96,5 +96,13 @@
   <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js" async></script>
   <script src="./scripts/main.ts" async></script>
   <script src="./scripts/encore.ts" async></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        const path = '/sw.js'
+        navigator.serviceWorker.register(path)
+      })
+    }
+  </script>
 </body>
 </html>
