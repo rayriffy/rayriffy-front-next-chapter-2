@@ -48,6 +48,5 @@
     "inDev": false,
     "strategy": "default"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
