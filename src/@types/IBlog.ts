@@ -1,7 +1,20 @@
 export interface IBlog {
   url: string
+  slug: string
+  banner: {
+    url: string
+    width: number
+    height: number
+  }
   title: string
   subtitle: string
-  banner: string
-  category: string[]
+  date: string
+  featured: boolean
+  categoryCollection: {
+    items: {
+      name: string
+      key: string
+      desc: string
+    }[]
+  }
 }
