@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "postbuild": "cp public/* dist/"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
