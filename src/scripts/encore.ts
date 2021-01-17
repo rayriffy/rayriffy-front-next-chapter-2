@@ -19,7 +19,7 @@ window.addEventListener('keydown', e => {
 
   if (verifier && konamiCode.length === inputBuffer.length) {
     const el = document.querySelector('#encore-1')
-    el.innerHTML = '<div class="embed-responsive aspect-ratio-21/9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wpV-gGA4PSk?autoplay=1"></iframe></div>'
+    el.innerHTML = '<div class="aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/wpV-gGA4PSk?autoplay=1"></iframe></div>'
     el.classList.toggle('hidden')
     window.scrollTo({
       top: 0,

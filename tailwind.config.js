@@ -1,30 +1,40 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   theme: {
-    aspectRatio: {
-      none: 0,
-      square: [1, 1],
-      "16/9": [16, 9],
-      "4/3": [4, 3],
-      "21/9": [21, 9]
-    },
-    // backgroundColor: theme => ({
-    //   ...theme('colors'),
-    //   primary: '#4b6fff',
-    // }),
-    extend: {
-      screens: {
-        'dark': {'raw': '(prefers-color-scheme: dark)'},
-        'md:dark': {'raw': '(min-width: 768px) and (prefers-color-scheme: dark)'},
-      },
+    colors: {
+      white: '#ffffff',
+      black: '#000000',
+      bluegray: colors.blueGray,
+      coolgray: colors.coolGray,
+      gray: colors.gray,
+      truegray: colors.trueGray,
+      warmgray: colors.warmGray,
+      red: colors.red,
+      orange: colors.orange,
+      amber: colors.amber,
+      yellow: colors.yellow,
+      lime: colors.lime,
+      green: colors.green,
+      emerald: colors.emerald,
+      teal: colors.teal,
+      cyan: colors.cyan,
+      lightblue: colors.lightBlue,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      violet: colors.violet,
+      purple: colors.purple,
+      pink: colors.pink,
+      rose: colors.rose,
     },
   },
+  darkMode: 'media',
   variants: {
     aspectRatio: ['responsive'],
     textDecoration: ['responsive', 'hover', 'group-hover'],
   },
   plugins: [
-    require("tailwindcss-responsive-embed"),
-    require("tailwindcss-aspect-ratio"),
+    require("@tailwindcss/aspect-ratio"),
   ],
   purge: [
     './**/*.html',

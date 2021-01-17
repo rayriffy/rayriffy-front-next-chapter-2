@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply h-screen bg-white;
+  @apply h-screen bg-white dark:bg-truegray-900;
   height: -webkit-fill-available;
 }
 
@@ -22,10 +22,4 @@ body {
 
 .hover\:bg-brand-600:hover {
   background-color: hsl(228, 100%, 56.6%);
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    @apply bg-gray-900;
-  }
 }

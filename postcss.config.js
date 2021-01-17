@@ -1,10 +1,10 @@
 module.exports = {
-  plugins: [
-    require('tailwindcss')('./tailwind.config.js'),
-    ...process.env.NODE_ENV === 'production' ? [
-      require('cssnano')({
+  plugins: {
+      tailwindcss: "tailwind.config.js",
+      //'@fullhuman/postcss-purgecss': process.env.NODE_ENV === 'development',
+      // autoprefixer: {},
+      cssnano: {
         preset: 'advanced',
-      }),
-    ] : []
-  ]
+      }
+  },
 }
