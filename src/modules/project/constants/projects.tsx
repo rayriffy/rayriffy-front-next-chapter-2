@@ -20,8 +20,9 @@ export const projects: Project[] = [
     name: 'セカイ Wiki',
     subtitle: (
       <React.Fragment>
-        So, there's an repository that contains all data dumps for the game{' '}
-        <b>プロジェクトセカイ カラフルステージ！ feat. 初音ミク</b>
+        There's an repository that contains all data dumps for the game{' '}
+        <b>プロジェクトセカイ カラフルステージ！ feat. 初音ミク</b>. So, I use
+        them to visualize the data and made them as a wiki for the game.
       </React.Fragment>
     ),
   },
