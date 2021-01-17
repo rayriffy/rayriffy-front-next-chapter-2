@@ -31,11 +31,12 @@ export const AppLayout: React.FC = props => {
                 aria-label="Global"
               >
                 <div className="flex items-center flex-grow flex-shrink-0">
-                  <div className="flex items-center justify-between w-full">
+                  <div className="flex items-center w-full">
                     <a href="#">
                       <span className="sr-only">rayriffy</span>
                       <Logo className="h-8 w-auto sm:h-10" />
                     </a>
+                    <div className="mx-4 h-6 sm:h-8 border-l-2 border-gray-300"></div>
                     <div>
                       <a
                         href="https://webring.wonderful.software#rayriffy.com"
@@ -43,9 +44,8 @@ export const AppLayout: React.FC = props => {
                       >
                         <img
                           alt="webring"
-                          width="32"
-                          height="32"
                           src="/webring.svg"
+                          className="w-8 h-8 sm:w-10 sm:h-10"
                         />
                       </a>
                     </div>
