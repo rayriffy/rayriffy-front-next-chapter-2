@@ -1,21 +1,4 @@
-# rayriffy-front-next: Chapter 2
+next-tailwind-ui
+===
 
-New new very new rayriffy.com
-
-## To install
-
-```
-yarn
-```
-
-## To develop
-
-```
-yarn dev
-```
-
-## To build
-
-```
-yarn build
-```
+Template repository to bootstrap Next application work

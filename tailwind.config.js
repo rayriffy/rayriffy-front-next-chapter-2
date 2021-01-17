@@ -1,6 +1,14 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  purge: [
+    './src/**/*.html',
+    './src/**/*.tsx',
+    './src/**/*.ts',
+    './src/**/*.jsx',
+    './src/**/*.js',
+  ],
   theme: {
     colors: {
       white: '#ffffff',
@@ -27,21 +35,16 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
     },
+    extend: {
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
-  darkMode: 'media',
-  variants: {
-    aspectRatio: ['responsive'],
-    textDecoration: ['responsive', 'hover', 'group-hover'],
-  },
+  variants: {},
   plugins: [
-    require("@tailwindcss/aspect-ratio"),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
   ],
-  purge: [
-    './**/*.html',
-    './**/*.vue',
-    './**/*.tsx',
-    './**/*.ts',
-    './**/*.jsx',
-    './**/*.js',
-  ]
 }

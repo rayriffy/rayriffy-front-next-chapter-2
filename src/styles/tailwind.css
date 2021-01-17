@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+html, body, #__next {
+  height: 100%;
+}
+
+#next-image-override > div {
+  height: 100% !important;
+}
