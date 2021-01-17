@@ -26,7 +26,7 @@ module.exports = withPlugins(
       // excludeDefaultMomentLocales: true,
     },
     images: {
-      domains: [],
+      domains: ['images.ctfassets.net', 'webring.wonderful.software'],
     },
     experimental: {
       polyfillsOptimization: true,

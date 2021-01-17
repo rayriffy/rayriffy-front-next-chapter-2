@@ -11,13 +11,17 @@ interface Props {
 }
 
 export const HeadTitle: React.FC<Props> = props => {
-  const { title, description = 'Next Tailwind template', children } = props
+  const {
+    title,
+    description = 'Welcome to the front frontier of rayriffy.com!',
+    children,
+  } = props
 
   const router = useRouter()
   const { dispatch } = useStoreon('title')
 
   const transformedTitle = useMemo(
-    () => (title ? `${title} · Next Tailwind UI` : 'Next Tailwind UI'),
+    () => (title ? `${title} · rayriffy.com` : 'rayriffy.com'),
     [title]
   )
 
@@ -46,6 +50,9 @@ export const HeadTitle: React.FC<Props> = props => {
         href="https://rsms.me/inter/inter.css"
         media="screen,print"
       />
+
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/favicon.ico" />
 
       {children}
     </Head>
