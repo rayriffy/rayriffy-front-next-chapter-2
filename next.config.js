@@ -4,7 +4,6 @@ const timezone = require('dayjs/plugin/timezone')
 
 const withPlugins = require('next-compose-plugins')
 
-const withWorkers = require('@zeit/next-workers')
 const withOffline = require('next-offline')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -15,7 +14,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 module.exports = withPlugins(
-  [[withOffline], [withWorkers], [withPreact], [withBundleAnalyzer]],
+  [[withOffline], [withPreact], [withBundleAnalyzer]],
   {
     target: 'serverless',
     env: {
