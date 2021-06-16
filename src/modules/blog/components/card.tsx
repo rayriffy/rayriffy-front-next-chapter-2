@@ -1,4 +1,4 @@
-import React from 'react'
+import { FunctionComponent, memo } from 'react'
 
 import Image from 'next/image'
 
@@ -8,7 +8,7 @@ interface Props {
   blog: Blog
 }
 
-export const Card: React.FC<Props> = React.memo(props => {
+export const Card: FunctionComponent<Props> = memo(props => {
   const { categoryCollection, title, subtitle, banner, slug } = props.blog
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment, FunctionComponent } from 'react'
 
 import Image from 'next/image'
 
@@ -7,11 +7,11 @@ import { ServiceWorker } from './serviceWorker'
 
 import { Logo } from './logo'
 
-export const AppLayout: React.FC = props => {
+export const AppLayout: FunctionComponent = props => {
   const { children } = props
 
   return (
-    <React.Fragment>
+    <Fragment>
       <header className="relative bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -106,6 +106,6 @@ export const AppLayout: React.FC = props => {
       {children}
       <Footer />
       <ServiceWorker />
-    </React.Fragment>
+    </Fragment>
   )
 }

@@ -1,6 +1,6 @@
-import React from 'react'
+import { FunctionComponent, memo } from 'react'
 
-export const Skeleton: React.FC = React.memo(props => (
+export const Skeleton: FunctionComponent = memo(() => (
   <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
     <div className="flex-shrink-0">
       <div className="h-48 w-full bg-gray-300 animate-pulse" />

@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment } from 'react'
 
 import { NextPage } from 'next'
 import { AppProps } from 'next/app'
@@ -12,14 +12,14 @@ const NextApp: NextPage<AppProps> = props => {
   const { Component, pageProps } = props
 
   return (
-    <React.Fragment>
+    <Fragment>
       <Head>
         <title>rayriffy</title>
       </Head>
       <AppLayout>
         <Component {...pageProps} />
       </AppLayout>
-    </React.Fragment>
+    </Fragment>
   )
 }
 

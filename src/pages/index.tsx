@@ -1,16 +1,21 @@
-import React from 'react'
+import { Fragment } from 'react'
 
 import { NextPage } from 'next'
+import dynamic from 'next/dynamic'
 
-import { BlogSection } from '../modules/blog/components/section'
-import { ProjectSection } from '../modules/project/components/section'
+const BlogSection = dynamic(() =>
+  import('../modules/blog/components/section').then(o => o.BlogSection)
+)
+const ProjectSection = dynamic(() =>
+  import('../modules/project/components/section').then(o => o.ProjectSection)
+)
 
-const Page: NextPage = props => {
+const Page: NextPage = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <BlogSection />
       <ProjectSection />
-    </React.Fragment>
+    </Fragment>
   )
 }
 

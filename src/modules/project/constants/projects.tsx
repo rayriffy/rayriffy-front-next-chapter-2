@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment, ReactElement, ReactText } from 'react'
 
 interface Project {
   slug: {
@@ -7,7 +7,7 @@ interface Project {
   }
   href: string
   name: string
-  subtitle: React.ReactElement | React.ReactText
+  subtitle: ReactElement | ReactText
 }
 
 export const projects: Project[] = [
@@ -19,11 +19,11 @@ export const projects: Project[] = [
     href: 'https://sekai.rayriffy.com',
     name: 'セカイ Wiki',
     subtitle: (
-      <React.Fragment>
+      <Fragment>
         There's an repository that contains all data dumps for the game{' '}
         <b>プロジェクトセカイ カラフルステージ！ feat. 初音ミク</b>. So, I use
         them to visualize the data and made them as a wiki for the game.
-      </React.Fragment>
+      </Fragment>
     ),
   },
   {
@@ -41,8 +41,7 @@ export const projects: Project[] = [
       title: 'Arcade',
       span: 'bg-orange-100 text-orange-800',
     },
-    href:
-      'https://github.com/rayriffy/rayriffy-cron/tree/master/apps/maimai-tracker',
+    href: 'https://github.com/rayriffy/rayriffy-cron/tree/master/apps/maimai-tracker',
     name: 'maimai Progress Tracker',
     subtitle: `It's super hard to keep tracking which tracks in 3000+ tracks has not been achived with 100% score yet. So, I made an automate script to track my progress and visualize them via AirTable.`,
   },

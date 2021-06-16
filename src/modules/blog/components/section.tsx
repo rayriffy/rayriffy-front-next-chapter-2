@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import { FunctionComponent, Fragment, memo } from 'react'
 
 import { useBlog } from '../services/useBlog'
 import { Card } from './card'
 import { Skeleton } from './skeleton'
 
-export const BlogSection: React.FC = React.memo(props => {
+export const BlogSection: FunctionComponent = memo(() => {
   const { isError, isLoading, data } = useBlog()
 
   return (
