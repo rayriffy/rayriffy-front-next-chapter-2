@@ -7,6 +7,9 @@ import { ServiceWorker } from './serviceWorker'
 
 import { Logo } from './logo'
 
+import webring from '../../../public/webring.svg'
+import rayriffy from '../../../public/rayriffy.jpg'
+
 export const AppLayout: FunctionComponent = props => {
   const { children } = props
 
@@ -42,11 +45,9 @@ export const AppLayout: FunctionComponent = props => {
                         href="https://webring.wonderful.software#rayriffy.com"
                         title="webring"
                       >
-                        <img
-                          alt="webring"
-                          src="/webring.svg"
-                          className="w-8 h-8 sm:w-10 sm:h-10"
-                        />
+                        <span className="w-8 h-8 sm:w-10 sm:h-10 flex items-center">
+                          <Image src={webring} width={40} height={40} />
+                        </span>
                       </a>
                     </div>
                   </div>
@@ -94,12 +95,11 @@ export const AppLayout: FunctionComponent = props => {
         >
           <Image
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="/rayriffy.jpg"
-            width={1620}
-            height={1080}
+            src={rayriffy}
             layout="responsive"
             priority
             alt="rayriffy"
+            placeholder="blur"
           />
         </div>
       </header>
