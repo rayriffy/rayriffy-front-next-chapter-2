@@ -19,6 +19,7 @@ export const Card: React.FC<Props> = React.memo(props => {
           width={banner.width}
           height={banner.height}
           layout="responsive"
+          alt={slug}
         />
       </div>
       <div className="flex-1 bg-white p-6 flex flex-col justify-between">
