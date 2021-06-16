@@ -91,14 +91,14 @@ export const ServiceWorker: FunctionComponent = memo(props => {
         <div className="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8">
           <div
             className={`p-2 rounded-lg shadow-lg sm:p-3 ${
-              isInstalled ? 'bg-green-600' : 'bg-gray-600'
+              isInstalled ? 'bg-green-700' : 'bg-gray-600'
             }`}
           >
             <div className="flex items-center justify-between flex-wrap">
               <div className="w-0 flex-1 flex items-center">
                 <span
                   className={`flex p-2 rounded-lg ${
-                    isInstalled ? 'bg-green-800' : 'bg-gray-800'
+                    isInstalled ? 'bg-green-900' : 'bg-gray-800'
                   }`}
                 >
                   <SpeakerphoneIcon className="h-6 w-6 text-white" />
@@ -130,7 +130,7 @@ export const ServiceWorker: FunctionComponent = memo(props => {
                   onClick={() => setDismiss(true)}
                   className={`-mr-1 flex p-2 rounded-md focus:outline-none transition ease-in-out duration-150 ${
                     isInstalled
-                      ? 'hover:bg-green-500 focus:bg-green-500'
+                      ? 'hover:bg-green-600 focus:bg-green-600'
                       : 'hover:bg-gray-500 focus:bg-gray-500'
                   }`}
                   aria-label="Dismiss"

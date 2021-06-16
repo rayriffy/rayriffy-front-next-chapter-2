@@ -99,6 +99,7 @@ export const AppLayout: React.FC = props => {
             height={1080}
             layout="responsive"
             priority
+            alt="rayriffy"
           />
         </div>
       </header>
