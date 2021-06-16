@@ -46,7 +46,12 @@ export const AppLayout: FunctionComponent = props => {
                         title="webring"
                       >
                         <span className="w-8 h-8 sm:w-10 sm:h-10 flex items-center">
-                          <Image src={webring} width={40} height={40} />
+                          <Image
+                            src={webring}
+                            width={40}
+                            height={40}
+                            alt="webring"
+                          />
                         </span>
                       </a>
                     </div>
