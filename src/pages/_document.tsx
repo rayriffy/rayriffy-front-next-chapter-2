@@ -7,7 +7,6 @@ class NextDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>rayriffy</title>
           <meta name="title" content="rayriffy" />
           <meta
             name="description"
