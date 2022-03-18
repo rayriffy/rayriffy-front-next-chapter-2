@@ -3,7 +3,6 @@ import { Fragment, FunctionComponent } from 'react'
 import Image from 'next/image'
 
 import { Footer } from './footer'
-import { ServiceWorker } from './serviceWorker'
 
 import { Logo } from './logo'
 
@@ -110,7 +109,6 @@ export const AppLayout: FunctionComponent = props => {
       </header>
       {children}
       <Footer />
-      <ServiceWorker />
     </Fragment>
   )
 }

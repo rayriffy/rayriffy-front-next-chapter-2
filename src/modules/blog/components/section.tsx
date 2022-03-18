@@ -1,11 +1,14 @@
-import { FunctionComponent, Fragment, memo } from 'react'
+import { memo } from 'react'
+import { Blog } from '../../../core/@types/Blog'
 
-import { useBlog } from '../services/useBlog'
 import { Card } from './card'
-import { Skeleton } from './skeleton'
 
-export const BlogSection: FunctionComponent = memo(() => {
-  const { isError, isLoading, data } = useBlog()
+interface Props {
+  blogs: Blog[]
+}
+
+export const BlogSection = memo<Props>(props => {
+  const { blogs } = props
 
   return (
     <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
@@ -23,21 +26,9 @@ export const BlogSection: FunctionComponent = memo(() => {
           </p>
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-          {isLoading ? (
-            <Fragment>
-              <Skeleton />
-              <Skeleton />
-              <Skeleton />
-            </Fragment>
-          ) : isError ? (
-            'Fail'
-          ) : (
-            <Fragment>
-              {data.data.map(blog => (
-                <Card key={`blog-${blog.slug}`} blog={blog} />
-              ))}
-            </Fragment>
-          )}
+          {blogs.map(blog => (
+            <Card key={`blog-${blog.slug}`} blog={blog} />
+          ))}
         </div>
       </div>
     </div>

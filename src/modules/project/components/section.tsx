@@ -16,14 +16,19 @@ export const ProjectSection: FunctionComponent = memo(props => (
       <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
         {projects.map((project, i) => (
           <div key={`project-item-${i}`}>
-            <div>
-              <a href="#" className="inline-block">
-                <span
-                  className={`inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium ${project.slug.span}`}
+            <div className="space-x-2">
+              {project.slugs.map(slug => (
+                <div
+                  className="inline-block"
+                  key={`project-${i}-slug-${slug.title}`}
                 >
-                  {project.slug.title}
-                </span>
-              </a>
+                  <span
+                    className={`inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium ${slug.span}`}
+                  >
+                    {slug.title}
+                  </span>
+                </div>
+              ))}
             </div>
             <a href={project.href} className="block mt-4">
               <p className="text-xl font-semibold text-gray-900">
