@@ -14,6 +14,18 @@ export const projects: Project[] = [
   {
     slugs: [
       {
+        title: 'Infrastructure',
+        span: 'bg-emerald-100 text-emerald-800',
+      },
+    ],
+    href: 'https://github.com/Brikl/lambda-layer-canvas-fabric-arm64',
+    name: 'lambda-layer-canvas-fabric-arm64',
+    subtitle:
+      'AWS Lambda Layer with node-canvas and Fabric included for ARM64 runtime',
+  },
+  {
+    slugs: [
+      {
         title: 'Web',
         span: 'bg-blue-100 text-blue-800',
       },
